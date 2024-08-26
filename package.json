@@ -1,0 +1,32 @@
+{
+  "name": "@jackholden/npm-package",
+  "version": "0.0.0",
+  "description": "An example NPM package",
+  "keywords": [
+    "npm",
+    "typescript"
+  ],
+  "homepage": "https://github.com/jackholden/npm-package",
+  "bugs": {
+    "url": "https://github.com/jackholden/npm-package/issues"
+  },
+  "author": "Jack Holden",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackholden/npm-package.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4"
+  },
+  "scripts": {
+    "build": "tsc",
+    "ci": "npm run build",
+    "format": "prettier --write ."
+  }
+}
