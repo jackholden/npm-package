@@ -1,6 +1,6 @@
 {
   "name": "@jackholden/npm-package",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "An example NPM package",
   "keywords": [
     "npm",
@@ -39,5 +39,8 @@
     "dev": "vitest",
     "local-release": "changeset version && changeset publish",
     "prepublishOnly": "npm run ci"
+  },
+  "publishConfig": {
+    "@jackholden:registry": "https://npm.pkg.github.com"
   }
 }
